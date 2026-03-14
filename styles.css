@@ -56,7 +56,6 @@ main,
 .story,
 .About-Me,
 .Interests,
-.Projects,
 .Project_Dates {
   width: 95%;
   margin: 20px auto;
@@ -85,15 +84,31 @@ button {
 .Interests {
   background-color: lightblue;
 }
-
+.Projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 .Projects {
+  width: 45%;
+  height: 600px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
   background-color: rgb(183, 240, 183);
   text-align: center;
 }
-
 .Projects img {
   display: block;
   margin: 0 auto 15px auto; /* centers image and adds space below */
+}
+
+.Projects li {
+  list-style-position: inside;
+  padding-left: 20px;
+  margin: 0;
 }
 
 .Projects a {

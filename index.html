@@ -15,7 +15,29 @@
       </ul>
     </nav>
 
-    <h1>Sophie's Portfolio</h1>
+    <h1>
+      <svg
+        width="70"
+        height="70"
+        viewBox="0 0 100 100"
+        style="vertical-align: middle"
+      >
+        <defs>
+          <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="rgb(183, 240, 183)" />
+            <stop offset="100%" stop-color="lightcoral" />
+          </linearGradient>
+        </defs>
+
+        <circle cx="50" cy="50" r="40" fill="url(#grad1)" />
+
+        <text x="50" y="62" text-anchor="middle" font-size="45" fill="white">
+          S
+        </text>
+      </svg>
+
+      Sophie's Portfolio
+    </h1>
 
     <div class="About-Me">
       <h2>About Me</h2>
@@ -27,7 +49,8 @@
         curry, and burgers.
       </p>
       <img
-        src="https://media.licdn.com/dms/image/v2/D4E35AQFRbqQLMODw8Q/profile-framedphoto-shrink_400_400/B4EZvtrvpeHIAc-/0/1769219226572?e=1773288000&v=beta&t=J3BJWBjjug15OkduB_i_WOHFgvjNJMU-wqWZxW8G0T4"
+        height="300 rem"
+        src="sophie.jpg"
         alt="Sophie's LinkedIn profile picture"
       />
     </div>
@@ -76,78 +99,94 @@
       </table>
     </div>
     <h2>My Projects</h2>
-    <div class="Projects">
-      <h4>Crude Oil Time series analysis</h4>
-      <li>Preprocessed and transformed the dataset</li>
-      <li>Analyzed the data</li>
-      <li>
-        Fitted and evaluated ARIMA, ARIMA with time, and cointergated time
-        series models
-      </li>
-      <li>
-        Contributed to refining the report that presented key findings and
-        insights.
-      </li>
-    </div>
+    <div class="Projects-container">
+      <div class="Projects">
+        <h4>Personal academic performance analysis</h4>
+        <img
+          height="300rem"
+          src="class_vs_my_grades.png"
+          alt="A bar graph comparing class average and my grade for each class"
+        />
+        <li>Visualized the data</li>
+        <li>
+          Made new features such as class level, class category, subject, class
+          type, and letter grade category.
+        </li>
+        <li>Compared class vs. individual performance</li>
+        <li>Identified highest and lowest grades</li>
+      </div>
+      <div class="Projects">
+        <h4>Crude Oil Time series analysis</h4>
+        <li>Preprocessed and transformed the dataset</li>
+        <li>Analyzed the data</li>
+        <li>
+          Fitted and evaluated ARIMA, ARIMA with time, and cointergated time
+          series models
+        </li>
+        <li>
+          Contributed to refining the report that presented key findings and
+          insights.
+        </li>
+      </div>
 
-    <div class="Projects">
-      <h4>DS3 Datathon 2025, LSGS Team</h4>
-      <a href="https://ds3utsc.com/hackathon/leaderboard/past" target="_blank"
-        ><button>Check it Out!</button></a
-      >
-      <li>Placed 6th out of 27 teams</li>
-      <li>Used R to explore and clean data</li>
-      <li>Trained a binary classification model with 94.47% accuracy</li>
-    </div>
-    <div class="Projects">
-      <h4>Shopping Website</h4>
-      <img
-        height="500px"
-        src="sophie_shopping_website.png"
-        alt="Screenshot of Sophie's shopping website project, showing a foral themed clothing shop"
-      />
-      <a
-        href="https://sophieliu071117.github.io/Web_Dev_Class_Final_Project/"
-        target="_blank"
-        ><button>Check it Out!</button></a
-      >
-      <li>Has a pretty floral theme</li>
-      <li>Uses grids and has mutiple pages</li>
-      <li>Has animations</li>
-    </div>
+      <div class="Projects">
+        <h4>DS3 Datathon 2025, LSGS Team</h4>
+        <a href="https://ds3utsc.com/hackathon/leaderboard/past" target="_blank"
+          ><button>Check it Out!</button></a
+        >
+        <li>Placed 6th out of 27 teams</li>
+        <li>Used R to explore and clean data</li>
+        <li>Trained a binary classification model with 94.47% accuracy</li>
+      </div>
+      <div class="Projects">
+        <h4>Shopping Website</h4>
+        <img
+          height="300rem"
+          src="sophie_shopping_website.png"
+          alt="Screenshot of Sophie's shopping website project, showing a foral themed clothing shop"
+        />
+        <a
+          href="https://sophieliu071117.github.io/Web_Dev_Class_Final_Project/"
+          target="_blank"
+          ><button>Check it Out!</button></a
+        >
+        <li>Has a pretty floral theme</li>
+        <li>Uses grids and has mutiple pages</li>
+        <li>Has animations</li>
+      </div>
 
-    <div class="Projects">
-      <h4>IdentityMaster</h4>
-      <img
-        height="500px"
-        src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/170/223/datas/gallery.jpg"
-        alt="Identity vault personal info homepage"
-      />
-      <a href="https://devpost.com/software/dominators" target="_blank"
-        ><button>Check it Out!</button></a
-      >
-      <li>Uses JavaScript to allow editing of personal information</li>
-      <li>Has a basic good looking UI</li>
-      <li>Helps people with their job search and self discovery journey</li>
-    </div>
-    <div class="Projects">
-      <h4>Dump It Like It's Hot</h4>
-      <img
-        height="500px"
-        src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/819/490/datas/gallery.jpg"
-        alt="Phone showing the leaderboard and trash collection statistics of the Dump It Like it's Hot web app"
-      />
+      <div class="Projects">
+        <h4>IdentityMaster</h4>
+        <img
+          height="300rem"
+          src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/170/223/datas/gallery.jpg"
+          alt="Identity vault personal info homepage"
+        />
+        <a href="https://devpost.com/software/dominators" target="_blank"
+          ><button>Check it Out!</button></a
+        >
+        <li>Uses JavaScript to allow editing of personal information</li>
+        <li>Has a basic good looking UI</li>
+        <li>Helps people with their job search and self discovery journey</li>
+      </div>
+      <div class="Projects">
+        <h4>Dump It Like It's Hot</h4>
+        <img
+          height="300rem"
+          src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/819/490/datas/gallery.jpg"
+          alt="Phone showing the leaderboard and trash collection statistics of the Dump It Like it's Hot web app"
+        />
 
-      <a
-        href="https://devpost.com/software/dump-it-like-its-hot"
-        target="_blank"
-        ><button>Check it Out!</button></a
-      >
-      <li>Has an AI model that detects trash in images</li>
-      <li>Has a leaderboard and statistics tracking</li>
-      <li>Gamifies trash disposal</li>
+        <a
+          href="https://devpost.com/software/dump-it-like-its-hot"
+          target="_blank"
+          ><button>Check it Out!</button></a
+        >
+        <li>Has an AI model that detects trash in images</li>
+        <li>Has a leaderboard and statistics tracking</li>
+        <li>Gamifies trash disposal</li>
+      </div>
     </div>
-
     <h2>Project Dates</h2>
     <div class="Project_Dates">
       <table>
