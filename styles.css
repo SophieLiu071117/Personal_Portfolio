@@ -17,7 +17,8 @@ nav li a {
   border-radius: 10px;
   border: 2px solid white;
   margin: 5px;
-  font-size: 14px;
+  font-size: 1.4rem;
+  white-space: nowrap;
 }
 
 nav li a:hover {
