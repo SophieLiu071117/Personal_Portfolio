@@ -84,6 +84,7 @@ button {
 .Interests {
   background-color: lightblue;
 }
+
 .Projects-container {
   display: flex;
   flex-direction: row;
@@ -93,7 +94,7 @@ button {
 }
 .Projects {
   width: 45%;
-  height: 600px;
+  max-height: 1000px;
   box-sizing: border-box;
   padding: 20px;
   border-radius: 10px;
@@ -129,6 +130,7 @@ button {
 .Project_Dates {
   background-color: rgb(236, 234, 142);
   text-align: center;
+  width: 100%;
 }
 
 table {
