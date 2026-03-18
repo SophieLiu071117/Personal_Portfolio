@@ -1,3 +1,25 @@
+@media (max-width: 600px) {
+  .Interests_table thead {
+    display: none;
+  }
+
+  .Interests_table tbody tr {
+    display: block;
+    width: 100%;
+  }
+
+  .Interests_table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .Interests_table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+  }
+}
 nav > ul {
   padding: 0;
   margin: 0;
