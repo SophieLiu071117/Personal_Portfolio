@@ -15,7 +15,7 @@
         <li><a href="contact-me.html">Contact Me</a></li>
       </ul>
     </nav>
-
+<main>
     <h1>
       <svg
         width="70"
@@ -113,23 +113,25 @@
     </div>
     <h2>My Projects</h2>
     <div class="Projects-container">
+    <div class="Projects">
+  <h4 id="Academic_Analysis_Project">Personal academic performance analysis</h4>
+  <img
+    width="100%"
+    src="class_vs_my_grades.png"
+    alt="A bar graph"
+  />
+  
+  <ul> <li>Visualized the data</li>
+    <li>Made new features (class level, category, etc.)</li>
+    <li>Compared class vs. individual performance</li>
+    <li>Identified highest and lowest grades</li>
+  </ul>
+
+  <button onclick="Highlight('Academic_Analysis_Project')">Highlight Title</button>
+</div>
       <div class="Projects">
-        <h4>Personal academic performance analysis</h4>
-        <img
-          width="100%"
-          src="class_vs_my_grades.png"
-          alt="A bar graph comparing class average and my grade for each class"
-        />
-        <li>Visualized the data</li>
-        <li>
-          Made new features such as class level, class category, subject, class
-          type, and letter grade category.
-        </li>
-        <li>Compared class vs. individual performance</li>
-        <li>Identified highest and lowest grades</li>
-      </div>
-      <div class="Projects">
-        <h4>Crude Oil Time series analysis</h4>
+        <h4 id="Time_series_Project">Crude Oil Time series analysis</h4>
+        <ul>
         <li>Preprocessed and transformed the dataset</li>
         <li>Analyzed the data</li>
         <li>
@@ -140,19 +142,24 @@
           Contributed to refining the report that presented key findings and
           insights.
         </li>
+      </ul>
+      <button onclick="Highlight('Time_series_Project')">Highlight Title</button>
       </div>
 
       <div class="Projects">
-        <h4>DS3 Datathon 2025, LSGS Team</h4>
+        <h4 id="DS3_Datathon">DS3 Datathon 2025, LSGS Team</h4>
         <a href="https://ds3utsc.com/hackathon/leaderboard/past" target="_blank"
           ><button>Check it Out!</button></a
         >
+        <ul>
         <li>Placed 6th out of 27 teams</li>
         <li>Used R to explore and clean data</li>
         <li>Trained a binary classification model with 94.47% accuracy</li>
+        </ul>
+        <button onclick="Highlight('DS3_Datathon')">Highlight Title</button>
       </div>
       <div class="Projects">
-        <h4>Shopping Website</h4>
+        <h4 id="Shopping_Website">Shopping Website</h4>
         <img
           width="100%"
           src="sophie_shopping_website.png"
@@ -163,13 +170,16 @@
           target="_blank"
           ><button>Check it Out!</button></a
         >
+        <ul>
         <li>Has a pretty floral theme</li>
         <li>Uses grids and has mutiple pages</li>
         <li>Has animations</li>
+        </ul>
+        <button onclick="Highlight('Shopping_Website')">Highlight Title</button>
       </div>
 
       <div class="Projects">
-        <h4>IdentityMaster</h4>
+        <h4 id="IdentityMaster">IdentityMaster</h4>
         <img
           width="100%"
           src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/170/223/datas/gallery.jpg"
@@ -178,12 +188,15 @@
         <a href="https://devpost.com/software/dominators" target="_blank"
           ><button>Check it Out!</button></a
         >
+        <ul>
         <li>Uses JavaScript to allow editing of personal information</li>
         <li>Has a basic good looking UI</li>
         <li>Helps people with their job search and self discovery journey</li>
+      </ul>
+      <button onclick="Highlight('IdentityMaster')">Highlight Title</button>
       </div>
       <div class="Projects">
-        <h4>Dump It Like It's Hot</h4>
+        <h4 id="Dump_Tt_Like_Its_Hot">Dump It Like It's Hot</h4>
         <img
           width="100%"
           src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/819/490/datas/gallery.jpg"
@@ -195,9 +208,12 @@
           target="_blank"
           ><button>Check it Out!</button></a
         >
+        <ul>
         <li>Has an AI model that detects trash in images</li>
         <li>Has a leaderboard and statistics tracking</li>
         <li>Gamifies trash disposal</li>
+      </ul>
+        <button onclick="Highlight('Dump_Tt_Like_Its_Hot')">Highlight Title</button>
       </div>
     </div>
     <h2>Project Dates</h2>
@@ -233,6 +249,8 @@
         </tr>
       </table>
     </div>
+  </main>
     <footer>&#169; 2026 Sophie Liu. All rights reserved.</footer>
+    <script src="Script.js"></script>
   </body>
 </html>
