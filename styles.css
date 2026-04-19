@@ -1,22 +1,22 @@
 @media (max-width: 600px) {
   nav ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  list-style: none;
-}
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    list-style: none;
+  }
 
-nav li a {
-  display: inline-block;
-  padding: 8px 16px;
-  font-size: clamp(0.7rem, 2.5vw, 1rem);
-  white-space: nowrap;
-  border-radius: 20px;
-  text-align: center;
-}
+  nav li a {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
+    white-space: nowrap;
+    border-radius: 20px;
+    text-align: center;
+  }
   .Interests_table thead {
     display: none;
   }
@@ -50,7 +50,7 @@ body {
 }
 
 main {
-  min-width: 0; 
+  min-width: 0;
   overflow-x: hidden;
 }
 
@@ -82,10 +82,25 @@ nav li a:hover {
   background-color: green;
 }
 
+@keyframes change-size-h1 {
+  0% {
+    font-size: 36px;
+  }
+  50% {
+    font-size: 50px;
+  }
+  100% {
+    font-size: 36px;
+  }
+}
+
 h1 {
   text-align: center;
   font-size: 36px;
   margin: 20px 0;
+}
+h1:hover {
+  animation: change-size-h1 5s;
 }
 
 h2 {
@@ -99,10 +114,26 @@ h3 {
   font-size: 24px;
   margin-bottom: 15px;
 }
+@keyframes change-size-h4 {
+  0% {
+    font-size: 24px;
+  }
+  50% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 24px;
+  }
+}
+
 h4 {
   text-align: center;
   font-size: 24px;
   margin-bottom: 15px;
+}
+
+h4:hover {
+  animation: change-size-h4 5s;
 }
 .contact-info,
 .story,
@@ -163,7 +194,7 @@ button {
   padding: 20px;
   border-radius: 10px;
   background-color: rgb(183, 240, 183);
-  text-align: center;      
+  text-align: center;
 }
 .Projects img {
   display: block;
